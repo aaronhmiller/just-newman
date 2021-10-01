@@ -1,5 +1,6 @@
-FROM node:16.3-alpine
+FROM alpine:latest
 
-RUN npm i -g newman
+RUN apk add --update npm && \
+    npm i -g newman 
 
 ENTRYPOINT [ "newman" ]

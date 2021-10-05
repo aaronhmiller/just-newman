@@ -20,6 +20,6 @@ docker run -v `pwd`/samples/:/tmp/ --rm saltaaron/just-newman run /tmp/Httpbin-C
 Using the reporters feature:
 
 ```
-docker run --rm -v `pwd`/samples/:/tmp/ saltaaron/just-newman run --reporters json https://www.getpostman.com/collections/221645fd2a40abb94aec --reporter-json-export /tmp
+docker run --rm -v `pwd`/reports/:/tmp/ saltaaron/just-newman run --reporters json https://www.getpostman.com/collections/221645fd2a40abb94aec --reporter-json-export /tmp
 ```
 

@@ -22,3 +22,9 @@ Using the reporters feature:
 docker run --rm -v `pwd`/reports/:/reports/ saltaaron/just-newman run --reporters json https://www.getpostman.com/collections/221645fd2a40abb94aec --reporter-json-export /reports
 ```
 
+Using both together:
+
+```
+docker run -v `pwd`/samples/:/samples/ -v `pwd`/reports/:/reports/ --rm saltaaron/just-newman run /samples/Httpbin-Collection.postman_collection.json --reporters json --reporter-json-export /reports
+```
+
